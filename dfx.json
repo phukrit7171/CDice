@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "CDice_backend": {
+      "main": "src/CDice_backend/main.mo",
+      "type": "motoko"
+    },
+    "CDice_frontend": {
+      "dependencies": [
+        "CDice_backend"
+      ],
+      "source": [
+        "src/CDice_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "CDice_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
